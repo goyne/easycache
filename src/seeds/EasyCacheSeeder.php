@@ -1,6 +1,6 @@
 <?php
 
-namespace Websanova\EasyCache\Seeds;
+namespace Goyne\EasyCache\Seeds;
 
 use Illuminate\Database\Seeder;
 
@@ -8,21 +8,21 @@ class EasyCacheSeeder extends Seeder
 {
     public function run()
     {
-        \Websanova\EasyCache\Models\Domain::truncate();
+        \Goyne\EasyCache\Models\Domain::truncate();
 
-        \DB::table('websanova_easycache_domains')->insert([
+        \DB::table('goyne_easycache_domains')->insert([
             'slug' => 'en',
             'name' => 'English',
         ]);
 
-        \DB::table('websanova_easycache_domains')->insert([
+        \DB::table('goyne_easycache_domains')->insert([
             'slug' => 'fr',
             'name' => 'French',
         ]);
 
-        \Websanova\EasyCache\Models\Item::truncate();
+        \Goyne\EasyCache\Models\Item::truncate();
 
-        \DB::table('websanova_easycache_items')->insert([
+        \DB::table('goyne_easycache_items')->insert([
             'domain_id' => 1,
         	'slug' => 'one',
         	'name' => 'One',
@@ -32,7 +32,7 @@ class EasyCacheSeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now()
         ]);
 
-        \DB::table('websanova_easycache_items')->insert([
+        \DB::table('goyne_easycache_items')->insert([
             'domain_id' => 1,
             'slug' => 'two',
             'name' => 'Two',
@@ -42,7 +42,7 @@ class EasyCacheSeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now()
         ]);
 
-        \DB::table('websanova_easycache_items')->insert([
+        \DB::table('goyne_easycache_items')->insert([
             'domain_id' => 1,
             'slug' => 'three',
             'name' => 'Three',
@@ -52,7 +52,7 @@ class EasyCacheSeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now()
         ]);
 
-        \DB::table('websanova_easycache_items')->insert([
+        \DB::table('goyne_easycache_items')->insert([
             'domain_id' => 2,
             'slug' => 'four',
             'name' => 'Four',
@@ -62,7 +62,7 @@ class EasyCacheSeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now()
         ]);
 
-        \DB::table('websanova_easycache_items')->insert([
+        \DB::table('goyne_easycache_items')->insert([
             'domain_id' => 2,
             'slug' => 'five',
             'name' => 'Five',
@@ -72,9 +72,9 @@ class EasyCacheSeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now()
         ]);
 
-        \Websanova\EasyCache\Models\Comment::truncate();
+        \Goyne\EasyCache\Models\Comment::truncate();
 
-        \DB::table('websanova_easycache_comments')->insert([
+        \DB::table('goyne_easycache_comments')->insert([
             'domain_id' => 1,
             'item_id' => 1,
             'slug' => 'comment 1',
@@ -85,7 +85,7 @@ class EasyCacheSeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now()
         ]);
 
-        \DB::table('websanova_easycache_comments')->insert([
+        \DB::table('goyne_easycache_comments')->insert([
             'domain_id' => 1,
             'item_id' => 1,
             'slug' => 'comment 2',
@@ -96,7 +96,7 @@ class EasyCacheSeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now()
         ]);
 
-        \DB::table('websanova_easycache_comments')->insert([
+        \DB::table('goyne_easycache_comments')->insert([
             'domain_id' => 1,
             'item_id' => 1,
             'slug' => 'comment 3',
@@ -107,7 +107,7 @@ class EasyCacheSeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now()
         ]);
 
-        \DB::table('websanova_easycache_comments')->insert([
+        \DB::table('goyne_easycache_comments')->insert([
             'domain_id' => 1,
             'item_id' => 2,
             'slug' => 'comment 4',

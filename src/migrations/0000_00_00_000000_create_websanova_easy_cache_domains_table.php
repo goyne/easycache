@@ -3,11 +3,11 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateWebsanovaEasyCacheDomainsTable extends Migration
+class CreateGoyneEasyCacheDomainsTable extends Migration
 {
 	public function up()
 	{
-		Schema::create('websanova_easycache_domains', function(Blueprint $t)
+		Schema::create('goyne_easycache_domains', function(Blueprint $t)
 		{
 			$t->increments('id')->unsigned();
 			$t->text('slug', 255);
@@ -19,6 +19,6 @@ class CreateWebsanovaEasyCacheDomainsTable extends Migration
 
 	public function down()
 	{
-		Schema::drop('websanova_easycache_domains');
+		Schema::drop('goyne_easycache_domains');
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Websanova\EasyCache;
+namespace Goyne\EasyCache;
 
 use Cache;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

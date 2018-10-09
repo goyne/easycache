@@ -1,6 +1,6 @@
 <?php
 
-namespace Websanova\EasyCache;
+namespace Goyne\EasyCache;
 
 class EasyCacheCollection extends \Illuminate\Database\Eloquent\Collection
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Websanova\EasyCache\Models;
+namespace Goyne\EasyCache\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class BaseModel extends Model
 {
-	use \Websanova\EasyCache\EasyCache;
+	use \Goyne\EasyCache\EasyCache;
 
 	public function scopeDomain($q)
 	{

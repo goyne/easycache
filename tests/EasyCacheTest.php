@@ -1,8 +1,8 @@
 <?php
 
-use Websanova\EasyCache\Models\Item;
-use Websanova\EasyCache\Models\Domain;
-use Websanova\EasyCache\Models\Comment;
+use Goyne\EasyCache\Models\Item;
+use Goyne\EasyCache\Models\Domain;
+use Goyne\EasyCache\Models\Comment;
 
 class EasyCacheTest extends TestCase
 {

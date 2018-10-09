@@ -1,10 +1,10 @@
 <?php
 
-namespace Websanova\EasyCache\Models;
+namespace Goyne\EasyCache\Models;
 
 class Item extends BaseModel
 {
-    protected $table = 'websanova_easycache_items';
+    protected $table = 'goyne_easycache_items';
 
     protected $cacheKey = 'items';
 
@@ -20,7 +20,7 @@ class Item extends BaseModel
 
     public function comments()
     {
-    	return $this->hasMany('\Websanova\EasyCache\Models\Comment');
+    	return $this->hasMany('\Goyne\EasyCache\Models\Comment');
     }
 
     public function recountComments()

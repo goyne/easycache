@@ -7,7 +7,7 @@ Works similar to `paginate()` or `get()` extending to also allow `cache()`.
 ## Install
 
 ~~~
-composer require websanova/easycache
+composer require goyne/easycache
 ~~~
 
 ## Examples
@@ -64,7 +64,7 @@ The extension comes as a trait so just include it on any model you want to use i
 ~~~
 class Item extends \Illuminate\Database\Eloquent\Model
 {
-    use \Websanova\EasyCache\EasyCache;
+    use \Goyne\EasyCache\EasyCache;
 
     ...
 }
@@ -81,7 +81,7 @@ Based on this value the `cache()` method will call a function (or scope) by this
 ~~~
 class Item extends \Illuminate\Database\Eloquent\Model
 {
-    use \Websanova\EasyCache\EasyCache;
+    use \Goyne\EasyCache\EasyCache;
 
     public function id()
     {
@@ -105,7 +105,7 @@ Note because the `id()` method actually controls the data we don't need to speci
 Sometimes we will want to get an item from cache which is stored by `id` but through a different field. A good example is getting a user by an `email` or `facebook_id`. We don't want to cache the same data twice. This will do a quick look up first using the `passthrough` field before fetching the model by `id`.
 
 ~~~
-User::cache('rob@websanova.com', 'email');
+User::cache('rob@goyne.com', 'email');
 
 ---
 
@@ -260,7 +260,7 @@ This will perform just one query for getting the `score` rather than multiple qu
 
 ## License
 
-Laravel Easy Cache is licensed under [The MIT License (MIT)](https://github.com/websanova/easycache/blob/HEAD/LICENSE).
+Laravel Easy Cache is licensed under [The MIT License (MIT)](https://github.com/goyne/easycache/blob/HEAD/LICENSE).
 
 ## Credits
 

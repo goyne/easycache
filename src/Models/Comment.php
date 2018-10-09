@@ -1,10 +1,10 @@
 <?php
 
-namespace Websanova\EasyCache\Models;
+namespace Goyne\EasyCache\Models;
 
 class Comment extends BaseModel
 {
-    protected $table = 'websanova_easycache_comments';
+    protected $table = 'goyne_easycache_comments';
 
     protected $cacheKey = 'comments';
 
