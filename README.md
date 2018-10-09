@@ -261,3 +261,7 @@ This will perform just one query for getting the `score` rather than multiple qu
 ## License
 
 Laravel Easy Cache is licensed under [The MIT License (MIT)](https://github.com/websanova/easycache/blob/HEAD/LICENSE).
+
+## Credits
+
+Originally forked from websanova/easycache.
