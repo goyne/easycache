@@ -264,4 +264,4 @@ Laravel Easy Cache is licensed under [The MIT License (MIT)](https://github.com/
 
 ## Credits
 
-Originally forked from websanova/easycache.
+Originally forked from [websanova/easycache](https://github.com/websanova/easycache).
